@@ -1,0 +1,141 @@
+----
+Project Plan
+----
+
+YAML Header & Document Structure
+-	Goal: Create an appropriate YAML header
+-	Needs: Quarto, RStudio
+-	Steps:
+  o	Add a title (Activity 14)
+  o	Set the author to be me with my name
+  o	Add the date
+    	Set date-modified: now to reflect the updating process
+  o	Set output information
+    	Make sure the margins are 1 inch (number-depth: 5)
+    	Set toc to false so there is no table of contents
+  o	Make sure the QMD file will render as a pdf
+  o	Set cap-location: top so that captions will appear above their figures/tables
+
+Armed Forces Data Wrangling Redux (Activity #08 & #10)
+-	Goal: Create a frequency table with a smaller subset of soldiers 
+-	Needs: Activity 08 and 10 code, googlesheets4, dplyr, tidyverse, QMD file
+-	Steps:
+  o	(All inside of a code section in the QMD file)
+  o	Load needed packages
+  o	Create smaller subset
+    	Filter out army and pay grade O ranks
+  o	Use tabyl to create a frequency table
+    	Use adorn_totals to add a total row
+    	Use adorn_percentages to add relative frequencies
+    	Use adorn_pct_formatting to set relative frequencies to two decimal places
+    	Use adorn_title to add a title
+    	Mutate and use across to add commas into the table where numbers need them
+  o	Use kable to visualize the frequency table
+    	Add a caption “Ranks of US Army Officers by Sex”
+    	Style the table with a font size of 16 and adding stripes and condensing the table
+  o	Add a paragraph detailing what the frequency table is and what it shows with regards to sex and rank’s relationship in the Army for officers.
+
+Popularity of Baby Names (Activity #13)
+-	Goal: Add visualization from Activity 13 into QMD file
+-	Needs: Activity 13 code
+-	Steps:
+  o	Open Activity 13 code in R
+  o	Copy and paste the code into the QMD file in a code section
+  o	Add a paragraph detailing why I picked the names and what the trends in the graph show with regards to the 4 chosen names
+
+Plotting a Mathematical Function (Activity #03)
+-	Goal: Create a function that calculates maximum box volume based on length of side cutout
+-	Needs: ggplot2
+-	Steps:
+  o	Create a function
+    	Set length = 36 and width = 48, set x (side cutout length) to be variable
+    	Lengthbox = length – 2x
+    	Widthbox = width – 2x
+    	Heightbox = x
+    	Volumebox = lengthbox * widthbox * heightbox
+  o	Create a dataframe out of the possible cutout side lengths
+    	Trial and error with the graph shows the range should be from 0 to 18 by intervals of 1
+  o	Create a plot made with ggplot2
+    	Use stat_function to create a line plot using the function
+    	Add alt text
+    	Add labels and a title
+    	Add a theme
+    	Make the x scale break in intervals of 1 from 0 to 18
+  o	Add a paragraph that describes the line plot and tells what the maximum box volume is and what side length is needed to achieve it.
+
+What You’ve Learned So Far
+-	Goal: Write a self-reflection that is meaningful and genuine.
+-	Needs: QMD file
+-	Steps:
+  o	Write a reflection about what this class has taught me
+
+Code Appendix & Code
+-	Goal: Create a working code appendix
+-	Needs: Quarto crash course
+-	Steps:
+  o	Make sure the bottom of the QMD file has a code section that appends the code appendix as shown in the quarto crash course
+
+Code Style
+-	Goal: Adopt and use a consistent coding style throughout the QMD
+-	Needs: Tidyverse code style
+-	Steps:
+  o	Check to make sure all code adheres to the style
+
+----
+Repo Plan
+----
+
+Goal: Use branches to good effect
+o	Needs: GitHub
+o	Steps:
+  	Create a dev branch
+  	Commit to dev branches
+  	Once all commits are done, create a pull request to merge with the main branch
+  	Complete the pull request
+
+Goal: Create and solve two issues
+o	Needs: GitHub
+o	Steps:
+  	Create two issues
+    •	Issues: Add QMD/PDF, Add plan
+    •	Issues have relevant labels/tags applied
+  	Tag issues as they are resolved
+    •	Close issues
+
+Goal: Create multiple meaningful commits
+o	Needs: GitHub
+o	Steps:
+  	Each commit should actually serve a purpose
+  	Each commit has an appropriate summary message
+    •	Message describes What and Why without diving into How
+  	Pull requests have both title and description of what the request is meant to accomplish
+
+Goal: Create an appropriate README
+o	Needs: GitHub, RStudio
+o	Steps:
+  	Create a README file in RStudio
+  	In the readme, put:
+    •	What the repo is about
+    •	Where the data is from
+    •	Current plan for the project
+    •	How the repo is organized
+    •	Contact information
+
+Goal: Create a plan document
+o	Needs: Microsoft Word, RStudio, GitHub
+o	Steps:
+  	Plan should include both project and repo
+  	Should be complete, with goals, needs, and steps
+  	Copy plan from word into R file
+  	Commit R file to repo
+
+Goal: Have an output file for the repo
+o	Needs: Activity 14 QMD, GitHub
+o	Steps:
+  	Generate a PDF from Activity #14
+  	Commit PDF to repo
+
+Goal: Have a QMD file in the repo
+o	Needs: Activity 14 QMD, GitHub
+o	Steps:
+  	Commit Activity 14 QMD file to the repo
