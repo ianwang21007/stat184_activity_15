@@ -1,0 +1,19 @@
+# Activity 15-- GitHub Practice
+
+This is the README file for my submission of Activity 15 for my STAT184 class. The current plan is to create two issues, add my Activity 14 QMD, Activity 14 PDF, plan document, and this README file, and then create a pull request to merge my dev branch with the main branch.
+
+## Data
+
+This repository uses data from the United States Armed Forces and the {dcData} BabyNames data frame.
+
+## Current Plan
+
+1. Make a repo
+2. Create an issue of adding the Activity 14 QMD and PDF files.
+3. Create an issue of adding the plan document for Activity 15.
+4. Create a dev_Ian branch.
+5. Commit the Activity 14 QMD and PDF files, resolving issue 1.
+6. Commit the plan document for Activity 15, resolving issue 2.
+7. Commit this README document.
+8. Create a pull request.
+9. Complete the pull request and merge dev_Ian branch with the main branch.
